@@ -23,19 +23,19 @@ const cards = [
     icon: <Bulb />,
     text: "Innovative products",
     subtext:
-      'Made in France, robust, reliable and certified, "home automation ready".',
+      'Made in CatLand, awwsome, super cute certified, "home automation NOT ready".',
   },
   {
     icon: <Library />,
-    text: "French manufacture",
+    text: "Cat: what thinking?",
     subtext:
-      "We work in an artisanal way to offer high quality products and tailor-made solutions.",
+      "No one knows what goes in a cat's mind. So your guess is as good as mine :)",
   },
   {
     icon: <Beaker />,
-    text: "Immediate availability",
+    text: "Cuddlicious and lazy af",
     subtext:
-      "You can find all our products directly in stock at our Premium distributors. Do not hesitate to ask them for advice.",
+      "All cats are super cute and adorable. Except the one that looks like a rat. Hairless. Idk why people like them. To each their own ig.",
   },
 ];
 
@@ -80,7 +80,7 @@ export default function Home() {
             className="row-start-1 col-start-1 relative z-10 w-full rounded-xl"
             src="https://placekitten.com/1369/806"
           />
-          <div className="heroTextGradient row-start-1 col-start-1 self-end w-full pl-20 pr-12 pb-8 z-20 sticky bottom-0 text-white">
+          <div className="heroTextGradient row-start-1 col-start-1 self-end w-full pl-20 pr-12 pb-8 z-20 sticky bottom-0 text-white rounded-xl">
             <h3>New finishes: brown and white fur.</h3>
             <div className="flex justify-between items-center mt-6">
               <h1 className="text-8xl">Cat Collection</h1>
@@ -227,6 +227,12 @@ export default function Home() {
           ))}
         </div>
       </div>
+      <p className="text-center py-40 text-2xl">
+        This aint complete. I was cloning this site{" "}
+        <a className="underline" href="https://www.modelec.com/en">
+          https://www.modelec.com/en
+        </a>
+      </p>
     </>
   );
 }
