@@ -1,21 +1,99 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.heroTextGradient {
+  background-image: linear-gradient(
+    180deg,
+    rgba(47, 48, 53, 0),
+    rgba(47, 48, 53, 0.5)
+  );
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.slidingContainer:hover > .slidingText {
+  transform: translate(40px, 0);
 }
 
-* {
-  box-sizing: border-box;
+.slidingContainer:hover > .slidingIconLeft {
+  transform: translate(0, 0);
+  transition-duration: 500ms;
+  opacity: 1;
 }
 
-@media (prefers-color-scheme: dark) {
+.slidingContainer:hover > .slidingIconRight {
+  transform: translate(20px, 0);
+  transition-duration: 250ms;
+  opacity: 0;
+}
+
+.slidingText {
+  transition: all cubic-bezier(0.4, 0, 0.2, 1) 500ms;
+  transform: translate(0, 0);
+}
+
+.slidingIconLeft {
+  transition: all cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transform: translate(-40px, 0);
+  opacity: 0;
+}
+
+.slidingIconRight {
+  transition: all cubic-bezier(0.4, 0, 0.2, 1) 500ms;
+}
+
+.scrollInfinite {
+  animation: scrollInfinite 25s linear infinite forwards;
+}
+
+.scrollInfinite:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrollInfinite {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 1.25rem));
+  }
+}
+
+.profileName {
+  transition: opacity cubic-bezier(0.4, 0, 0.2, 1) 200ms;
+  opacity: 1;
+}
+
+.profile:hover > .profileName {
+  opacity: 0;
+}
+
+.profileDiscover {
+  transition: opacity cubic-bezier(0.4, 0, 0.2, 1) 200ms;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.profile:hover > .profileDiscover {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.profileBackgroundScroller {
+  display: none;
+  animation: scrollInfinite 10s linear infinite forwards;
+  animation-play-state: paused;
+}
+
+.profile:hover > .profileBackgroundScroller {
+  display: flex;
+  animation-play-state: running;
+}
+
+.contactGradient {
+  background: linear-gradient(0deg, hsla(0, 0%, 96%, 0), #f6f6f6);
+}
+
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
@@ -23,4 +101,4 @@ a {
     color: white;
     background: black;
   }
-}
+} */
