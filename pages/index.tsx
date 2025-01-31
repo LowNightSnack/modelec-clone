@@ -10,12 +10,12 @@ import Library from "../components/icons/Library";
 import Beaker from "../components/icons/Beaker";
 
 const cats = [
-  { name: "Tom", url: "http://placekitten.com/g/300/300" },
-  { name: "Orion", url: "http://placekitten.com/g/300/300" },
-  { name: "Maximillian", url: "http://placekitten.com/g/300/300" },
-  { name: "Schrodinger", url: "http://placekitten.com/g/300/300" },
-  { name: "Bleb", url: "http://placekitten.com/g/300/300" },
-  { name: "Oppenheimer", url: "http://placekitten.com/g/300/300" },
+  { name: "Tom", url: "https://placecats.com/300/300?fit=fill&position=center" },
+  { name: "Orion", url: "https://placecats.com/300/300?fit=fill&position=center" },
+  { name: "Maximillian", url: "https://placecats.com/300/300?fit=fill&position=center" },
+  { name: "Schrodinger", url: "https://placecats.com/300/300?fit=fill&position=center" },
+  { name: "Bleb", url: "https://placecats.com/300/300?fit=fill&position=center" },
+  { name: "Oppenheimer", url: "https://placecats.com/300/300?fit=fill&position=center" },
 ];
 
 const cards = [
@@ -78,7 +78,7 @@ export default function Home() {
         <div className="grid relative aspect-[2500/1473]">
           <img
             className="row-start-1 col-start-1 relative z-10 w-full rounded-xl"
-            src="https://placekitten.com/1369/806"
+            src="https://placecats.com/1369/806?fit=fill&position=center"
           />
           <div className="heroTextGradient row-start-1 col-start-1 self-end w-full pl-20 pr-12 pb-8 z-20 sticky bottom-0 text-white rounded-xl">
             <h3>New finishes: brown and white fur.</h3>
@@ -116,7 +116,7 @@ export default function Home() {
       </div>
       <div className="flex px-10 py-20">
         <div className="flex-1">
-          <img src="http://placekitten.com/g/800/800" className="rounded-xl" />
+          <img src="https://placecats.com/800/800?fit=fill&position=center" className="rounded-xl" />
         </div>
         <div className="flex-1">
           <div className="h-full flex justify-center flex-col gap-10 px-40">
@@ -161,7 +161,7 @@ export default function Home() {
           />
           <img
             className="ml-1 col-start-1 row-start-1 rounded-[4rem]"
-            src="http://placekitten.com/g/410/823"
+            src="https://placecats.com/410/823?fit=fill&position=center"
           />
         </div>
       </div>
@@ -181,7 +181,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex-1">
-          <img src="http://placekitten.com/g/800/800" className="rounded-xl" />
+          <img src="https://placecats.com/800/800?fit=fill&position=center" className="rounded-xl" />
         </div>
       </div>
       <div className="contactGradient">
